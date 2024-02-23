@@ -43,3 +43,45 @@
   color: #fff;
   transition: all 0.3s linear;
 }
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_wrapper button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  transition: all 0.3s linear;
+}
+
+.header_wrapper button:hover {
+  background: rgb(130, 130, 130);
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+input {
+  width: 500px;
+  padding: 15px 20px;
+  border-radius: 15px;
+}
+
+#intro {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.intro_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(173, 171, 171, 0.636);
+  padding: 10px 20px;
+}
