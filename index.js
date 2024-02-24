@@ -1,5 +1,6 @@
 let requestURL = "https://restcountries.com/v2/all";
 let wrapper = document.querySelector(".wrapper");
+let darkBtn = document.querySelector("#darkBtn");
 const data = fetch(requestURL);
 
 // data
@@ -39,3 +40,25 @@ function renderData(data) {
     wrapper.innerHTML = `NOT FOUND`;
   }
 }
+
+
+let isDarkMode = false;
+
+darkBtn.onclick = function () {
+  if (isDarkMode == false) {
+    document.body.style.transition = "all 0.2s linear";
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+    document
+      .querySelectorAll(".title")
+      .forEach((el) => (el.style.color = "white"));
+  } else {
+    document.body.style.transition = "all 0.2s linear";
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+    document
+      .querySelectorAll(".title")
+      .forEach((el) => (el.style.color = "black"));
+  }
+  isDarkMode = !isDarkMode;
+};
